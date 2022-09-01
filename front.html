@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <title>Connect Game</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
+   </head>
+<body>
+  <nav>
+    <div class="menu">
+      <div class="logo">
+        <a href="#">Connect Game</a>
+      </div>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="pages/about.html">About</a></li>
+        <li><a href="pages/contact.html">Contact</a></li>
+        <li><a href="pages/feedback.html">Feedback</a></li>
+      </ul>
+    </div>
+  </nav>
+  <div class="img"></div>
+  <div class="center">
+    </div>
+  </div>
+  <div id='map'></div>
+  <script>
+  function initMap(){
+    var location = {lat: -25.363, lng: 131.044};
+    var map = new google.maps.Map(document.getElementById('map'),{
+      zoom: 4,
+      center: location
+    });
+  }
+  </script>
+  <script>
+  src='https//maps.googleapis.com/maps/api/js?key=AIzaSyAiZENfq88sT9kcrBuPrvubwmMy5e7vBoc&callback=initMap' 
+  </script>
+
+  </div>
+</body>
+</html>
